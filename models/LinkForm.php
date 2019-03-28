@@ -11,7 +11,8 @@ class LinkForm extends Model
 	public function rules()
 	{
 		return [
-            [['long'], 'required'],
+            ['long', 'required'],
+            ['long', 'url'],
 		];
 	}
 }
